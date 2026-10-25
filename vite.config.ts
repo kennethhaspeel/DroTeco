@@ -1,28 +1,29 @@
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
-import path from "path"
-import mkcert from "vite-plugin-mkcert";
+import react from "@vitejs/plugin-react";
+import { defineConfig, type PluginOption } from "vite";
+import tailwindcss from "@tailwindcss/vite";
+import path from "path";
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react(), tailwindcss(), mkcert()],
-  base: process.env.NODE_ENV === 'production' ? '/DroTeco/' : '/',
-  resolve: {
-    alias: {
-      '@': path.resolve(import.meta.dirname, 'src')
-    }
-  },
+
+export default defineConfig(async ({ mode, command }) => {
+  const plugins: PluginOption[] = [react(), tailwindcss()];
+
+  if (command === "serve") {
+    const { default: mkcert } = await import("vite-plugin-mkcert");
+    plugins.push(mkcert());
+  }
+
+  return {
+    plugins,
+    base: mode === "production" ? "/DroTeco/" : "/",
+    resolve: {
+      alias: {
+        "@": path.resolve(import.meta.dirname, "src"),
+      },
+    },
     server: {
-    https: {},
-    port: 5173,
-    strictPort: true,
-    // proxy: {
-    //   "/api": {
-    //     target: "https://localhost:7276",
-    //     changeOrigin: true,
-    //     secure: false,
-    //   },
-    // },
-  },
-})
+      https: {},
+      port: 5173,
+      strictPort: true,
+    },
+  };
+});
