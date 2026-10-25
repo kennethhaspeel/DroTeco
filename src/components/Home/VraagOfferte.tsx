@@ -1,4 +1,4 @@
-import VraagOfferteImage from "@/assets/afbeeldingen/VraagOfferte.png";
+import VraagOfferteImage from "@/assets/afbeeldingen/vraagofferte.png";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 
