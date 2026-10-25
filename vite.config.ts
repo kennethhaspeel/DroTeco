@@ -7,6 +7,7 @@ import mkcert from "vite-plugin-mkcert";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(), mkcert()],
+  base: process.env.NODE_ENV === 'production' ? '/DroTeco/' : '/',
   resolve: {
     alias: {
       '@': path.resolve(import.meta.dirname, 'src')

@@ -1,6 +1,7 @@
 {
   "name": "aerial_intelligence",
   "private": true,
+  "homepage": "https://kennethhaspeel.github.io/DroTeco",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

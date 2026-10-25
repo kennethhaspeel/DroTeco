@@ -42,7 +42,7 @@ const OnzeDiensten2 = () => {
   return (
     <section
       aria-labelledby="diensten-title"
-      className="bg-[#f7f7f5] px-6 py-20 sm:px-10 lg:px-16"
+      className="bg-background px-6 py-20 text-foreground sm:px-10 lg:px-16"
     >
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 max-w-2xl">
@@ -51,7 +51,7 @@ const OnzeDiensten2 = () => {
           </p>
           <h2
             id="diensten-title"
-            className="mt-3 text-3xl font-semibold tracking-tight text-[#101315] sm:text-4xl"
+            className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl"
           >
             Onze diensten
           </h2>
