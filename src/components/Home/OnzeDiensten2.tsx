@@ -1,40 +1,45 @@
 
 import OnzeDienstenCard from './OnzeDienstenCard'
+import Fotogrammetrie from "@/assets/afbeeldingen/diensten/fotogrammetrie.png";
+import Thermografie from "@/assets/afbeeldingen/diensten/thermografie.png";
+import Gebouwinspecties from "@/assets/afbeeldingen/diensten/gebouwinspecties.png";
+import Luchtfotografie from "@/assets/afbeeldingen/diensten/luchtfotografie.png";
+import Hulpdiensten from "@/assets/afbeeldingen/diensten/hulpverlening.png";
 const diensten = [
   {
     nummer: "01",
     titel: "Fotogrammetrie",
     beschrijving:
       "Zet luchtbeelden om in nauwkeurige kaarten en 3D-modellen.",
-      afbeelding:"/afbeeldingen/diensten/fotogrammetrie.png"
+      afbeelding: Fotogrammetrie
   },
   {
     nummer: "02",
     titel: "Thermografie",
     beschrijving:
       "Breng warmteverschillen in beeld voor gerichte inspecties.",
-    afbeelding:"/afbeeldingen/diensten/thermografie.png"
+    afbeelding: Thermografie
   },
   {
     nummer: "03",
     titel: "Gebouwinspecties",
     beschrijving:
       "Bekijk daken en gevels veilig en gedetailleerd vanuit de lucht.",
-    afbeelding:"/afbeeldingen/diensten/gebouwinspecties.png"
+    afbeelding: Gebouwinspecties
   },
   {
     nummer: "04",
     titel: "Luchtfotografie",
     beschrijving:
       "Leg locaties en projecten vast vanuit een nieuw perspectief.",
-    afbeelding:"/afbeeldingen/diensten/luchtfotografie.png"
+    afbeelding: Luchtfotografie
   },
   {
     nummer: "05",
     titel: "Hulpdiensten",
     beschrijving:
       "Voorzie hulpdiensten van actueel overzicht vanuit de lucht.",
-    afbeelding:"/afbeeldingen/diensten/hulpdiensten.png"
+    afbeelding: Hulpdiensten
   },
 ];
 

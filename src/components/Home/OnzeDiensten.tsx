@@ -1,13 +1,17 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import Fotogrammetrie from "@/assets/afbeeldingen/diensten/fotogrammetrie.png";
+import Thermografie from "@/assets/afbeeldingen/diensten/thermografie.png";
+import Gebouwinspecties from "@/assets/afbeeldingen/diensten/gebouwinspecties.png";
+import Luchtfotografie from "@/assets/afbeeldingen/diensten/luchtfotografie.png";
+import Hulpdiensten from "@/assets/afbeeldingen/diensten/hulpverlening.png";
 const diensten = [
   {
     nummer: "01",
     titel: "Fotogrammetrie",
     beschrijving:
       "Zet luchtbeelden om in nauwkeurige kaarten en 3D-modellen.",
-    afbeelding: "/afbeeldingen/diensten/fotogrammetrie.png",
+    afbeelding: Fotogrammetrie,
     pagina: "/fotogrammetrie",
   },
   {
@@ -15,7 +19,7 @@ const diensten = [
     titel: "Thermografie",
     beschrijving:
       "Breng warmteverschillen in beeld voor gerichte inspecties.",
-    afbeelding: "/afbeeldingen/diensten/thermografie.png",
+    afbeelding: Thermografie,
     pagina: "/thermografie",
   },
   {
@@ -23,7 +27,7 @@ const diensten = [
     titel: "Gebouwinspecties",
     beschrijving:
       "Bekijk daken en gevels veilig en gedetailleerd vanuit de lucht.",
-    afbeelding: "/afbeeldingen/diensten/gebouwinspecties.png",
+    afbeelding: Gebouwinspecties,
     pagina: "/gebouwinspecties",
   },
   {
@@ -31,7 +35,7 @@ const diensten = [
     titel: "Luchtfotografie",
     beschrijving:
       "Leg locaties en projecten vast vanuit een nieuw perspectief.",
-    afbeelding: "/afbeeldingen/diensten/luchtfotografie.png",
+    afbeelding: Luchtfotografie,
     pagina: "/luchtfotografie",
   },
   {
@@ -39,7 +43,7 @@ const diensten = [
     titel: "Hulpdiensten",
     beschrijving:
       "Voorzie hulpdiensten van actueel overzicht vanuit de lucht.",
-    afbeelding: "/afbeeldingen/diensten/hulpdiensten.png",
+    afbeelding: Hulpdiensten,
     pagina: "/hulpdiensten",
   },
 ];

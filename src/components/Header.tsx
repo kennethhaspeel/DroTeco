@@ -8,7 +8,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
+import logo1 from "@/assets/afbeeldingen/logo_enkel_trans.png"
+import logo2 from "@/assets/afbeeldingen/naam_slogan.png"
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 h-18 w-full border-b bg-background shadow-sm sm:h-22">
@@ -22,12 +23,12 @@ const Header = () => {
           className="flex min-w-0 items-center font-semibold text-foreground no-underline hover:text-primary"
         >
           <img
-            src="/afbeeldingen/logo_enkel_trans.png"
+            src={logo1}
             alt=""
             className="h-8 w-auto sm:h-16"
           />
           <img
-            src="/afbeeldingen/naam_slogan.png"
+            src={logo2}
             alt=""
             className="h-8 w-auto sm:h-16"
           />
