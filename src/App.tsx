@@ -1,15 +1,15 @@
 import Home from "./pages/Home";
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import { SkeletonComponent } from "./components/SkeletonComponent";
-import NotFound from "./pages/NotFound";
-import Fotogrammetrie from "./pages/Fotogrammetrie";
-import Thermografie from "./pages/Thermografie";
-import GebouwInspecties from "./pages/GebouwInspecties";
-import Luchtfotografie from "./pages/Luchtfotografie";
-import Hulpdiensten from "./pages/Hulpdiensten";
-import { Contact } from "lucide-react";
+const NotFound = lazy(() => import("./pages/NotFound"));
+const Fotogrammetrie = lazy(() => import("./pages/Fotogrammetrie"));
+const Thermografie = lazy(() => import("./pages/Thermografie"));
+const GebouwInspecties = lazy(() => import("./pages/GebouwInspecties"));
+const Luchtfotografie = lazy(() => import("./pages/Luchtfotografie"));
+const Hulpdiensten = lazy(() => import("./pages/Hulpdiensten"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 
 
