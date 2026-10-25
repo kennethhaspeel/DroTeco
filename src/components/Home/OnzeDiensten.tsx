@@ -52,10 +52,10 @@ const OnzeDiensten = () => {
   return (
     <section
       aria-labelledby="diensten-title"
-      className="bg-background px-6 py-20 text-foreground sm:px-10 lg:px-16"
+      className="bg-background px-6 py-5 text-foreground sm:px-10 lg:px-16"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="mb-10 max-w-2xl">
+        <div className="mb-5 max-w-2xl">
           <p className="font-color-orange text-sm font-semibold uppercase tracking-[0.18em]">
             Wat we doen
           </p>
