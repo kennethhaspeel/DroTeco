@@ -1,3 +1,5 @@
+import HeroWide from "@/assets/afbeeldingen/hero_wide.png";
+
 const Hero = () => {
   return (
 <>
@@ -5,7 +7,7 @@ const Hero = () => {
       <div className="absolute inset-0 flex justify-center">
         <img
           id="aerial-view"
-          src="/afbeeldingen/hero_wide.png"
+          src={HeroWide}
           alt="A drone surveying a riverside construction site at sunset"
           className="h-full w-full max-w-[1600px] object-cover object-[80%_center] sm:object-center mask-[linear-gradient(90deg,transparent,black_18%,black_82%,transparent)]"
         />
