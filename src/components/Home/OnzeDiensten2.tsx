@@ -11,38 +11,42 @@ const diensten = [
     titel: "Fotogrammetrie",
     beschrijving:
       "Zet luchtbeelden om in nauwkeurige kaarten en 3D-modellen.",
-      afbeelding: Fotogrammetrie
+    afbeelding: Fotogrammetrie,
+    pagina: "/fotogrammetrie",
   },
   {
     nummer: "02",
     titel: "Thermografie",
     beschrijving:
       "Breng warmteverschillen in beeld voor gerichte inspecties.",
-    afbeelding: Thermografie
+    afbeelding: Thermografie,
+    pagina: "/thermografie",
   },
   {
     nummer: "03",
     titel: "Gebouwinspecties",
     beschrijving:
       "Bekijk daken en gevels veilig en gedetailleerd vanuit de lucht.",
-    afbeelding: Gebouwinspecties
+    afbeelding: Gebouwinspecties,
+    pagina: "/gebouwinspecties",
   },
   {
     nummer: "04",
     titel: "Luchtfotografie",
     beschrijving:
       "Leg locaties en projecten vast vanuit een nieuw perspectief.",
-    afbeelding: Luchtfotografie
+    afbeelding: Luchtfotografie,
+    pagina: "/luchtfotografie",
   },
   {
     nummer: "05",
     titel: "Hulpdiensten",
     beschrijving:
       "Voorzie hulpdiensten van actueel overzicht vanuit de lucht.",
-    afbeelding: Hulpdiensten
+    afbeelding: Hulpdiensten,
+    pagina: "/hulpdiensten",
   },
 ];
-
 const OnzeDiensten2 = () => {
   return (
     <section
@@ -73,6 +77,7 @@ const OnzeDiensten2 = () => {
               titel={dienst.titel}
               beschrijving={dienst.beschrijving}
               afbeelding={dienst.afbeelding}
+              pagina={dienst.pagina}
             />
           ))}
         </div>
