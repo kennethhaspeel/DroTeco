@@ -1,75 +1,28 @@
-# React + TypeScript + Vite
+# DroTeco
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DroTeco is a responsive website for a professional drone services business. It introduces the company's aerial services, explains how drone technology can help customers, and gives visitors a way to request a quote or get in touch.
 
-Currently, two official plugins are available:
+## Services
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The site includes information about:
 
-## React Compiler
+- Aerial photography
+- Building inspections
+- Photogrammetry
+- Thermal imaging
+- Emergency and assistance services
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology
 
-## Expanding the ESLint configuration
+The project is built with:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React 19** and **TypeScript** for the user interface
+- **Vite** for development and production builds
+- **React Router** for page navigation
+- **Tailwind CSS 4** for styling
+- **shadcn/ui** and **Base UI** for interface components
+- **Lucide React** for icons
+- **Embla Carousel** for carousel interactions
+- **Recharts** for charts
+- **Axios** for HTTP requests
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
